@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
-}
+  }
+
  a {
     text-decoration: none;
     color: #ffffff
@@ -44,22 +45,39 @@
  }
 
  h1 {
-
     font-family: 'Space grotesk', monospace;
-
     font-weight: 700;
     font-size: 100px;
-
  }
 
  p1 {
     font-size: 50px;
-
+    color: rgb(36, 119, 183);
  }
 
  .box{
+    display: inline-block;
     padding-top: 500px;
+    font-family: 'Courier New', Courier, monospace;
 
+  }
+
+  .box h2 {
+    font-size: 50px;
+    color: #ffffff;
+  }
+
+  .box p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(36, 119, 183);
+  }
+
+  .contact {
+      padding-top: 500px;
+      padding-left: 500px;
+      padding-right: 500px;
+      padding-bottom: 500px;
   }
 
  .inner-cursor {
