@@ -3,25 +3,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
-    
   }
 
  a {
     text-decoration: none;
     color: rgb(36, 119, 183);
-   
  }
 
  body {
    background-color: #000000;
-   
- }
- /*
-z- score is for the order of the layers. The higher the numbers appear on top of lower ones
- */
- 
-  .overlay {
+   }
 
+  /*
+  z- score is for the order of the layers. The higher the numbers appear on top of lower ones
+  */
+ 
+.overlay {
    z-index: 1;
    width: 100%;
    height: 100%;
@@ -30,13 +27,9 @@ z- score is for the order of the layers. The higher the numbers appear on top of
    height: 100vh;
    background-image: url('rise.png');
    background-size: cover;
-
-
-   
  } 
 
  nav {
-   
     position: absolute; 
     width: 100%;
     height: 80px;
@@ -80,20 +73,24 @@ z- score is for the order of the layers. The higher the numbers appear on top of
    padding-bottom: 20px;
    
  }
+
  p {
     padding-bottom: 60px;
     font-size: 30px;
-    /* color: rgb(36, 119, 183); */
+    color: rgb(36, 119, 183);
  }
 
    .subtitle {
       font-size: 60px;
+      padding-bottom: 200px;
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
       
    }
 
    .expertise {
     display: inline-block;
-    padding-top: 50px;
+    padding-top: 250px;
     font-family: 'Courier New', Courier, monospace;
 
   }
@@ -106,7 +103,7 @@ z- score is for the order of the layers. The higher the numbers appear on top of
   }
 
 .Projects {
-   padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .grid {
@@ -118,7 +115,6 @@ z- score is for the order of the layers. The higher the numbers appear on top of
 .img-wrapper {
    position: relative;
    overflow: hidden;
-  
  }
  
  .img-wrapper > img {
@@ -136,7 +132,6 @@ z- score is for the order of the layers. The higher the numbers appear on top of
    padding: 1rem;
    background: rgba(255, 255, 255, 0.4);
    display: flex;
-  
    justify-content: center;
    overflow: hidden;
 
@@ -233,9 +228,14 @@ p {
   transition: all 3s;
 }
 
+.effect {
+
+} 
+
+
 .show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-   transition: all 1s;
+   transition: all s;
 }
