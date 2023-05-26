@@ -12,7 +12,6 @@
    
  }
 
-
  body {
    background-color: #000000;
    
@@ -21,27 +20,28 @@
 z- score is for the order of the layers. The higher the numbers appear on top of lower ones
  */
  
- .overlay {
+  .overlay {
 
+   z-index: 1;
    width: 100%;
    height: 100%;
    position: absolute;
    background-repeat: none;
-   height: 150vh;
- 
+   height: 100vh;
    background-image: url('rise.png');
    background-size: cover;
-   z-index: 0;
+
 
    
- }
+ } 
 
  nav {
-   z-index: 1;
-    position: fixed; 
+   
+    position: absolute; 
     width: 100%;
     height: 80px;
-    background: #000000;
+    background: none;
+    z-index: 2;
     
  }
 
@@ -59,8 +59,8 @@ z- score is for the order of the layers. The higher the numbers appear on top of
  }
 
  .centered {
-   z-index: 0;
-   position: relative;
+    z-index: 1;
+    position: relative;
     color: rgb(251, 251, 251);
     text-align: center;
     padding-top: 150px;
@@ -93,34 +93,32 @@ z- score is for the order of the layers. The higher the numbers appear on top of
 
    .expertise {
     display: inline-block;
-    padding-top: 500px;
+    padding-top: 50px;
     font-family: 'Courier New', Courier, monospace;
 
   }
 
   .Projects h3 {
-   padding-top: 500px;
+   padding-top: 100px;
    font-family: 'Space grotesk', monospace;
    font-weight: 700;
-   padding-bottom: 20px;
+   
   }
 
 .Projects {
-   padding-bottom: 500px;
+   padding-bottom: 100px;
 }
 
 .grid {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
    padding-bottom: 500px;
-   
-  
  }
 
 .img-wrapper {
    position: relative;
    overflow: hidden;
-   z-index: 2;
+  
  }
  
  .img-wrapper > img {
@@ -188,8 +186,6 @@ z- score is for the order of the layers. The higher the numbers appear on top of
    margin: 30px 0; /* Adjust the margin value as per your desired spacing */
 }
 
- 
-  
 /*
  .inner-cursor {
     position: fixed;
@@ -215,12 +211,10 @@ z- score is for the order of the layers. The higher the numbers appear on top of
     transition: .02s;
 }
 
-
 */
 section {
   overflow-y: scroll; /* add scroll only to the y-axis */
 }
-
 
 .content {
   max-width: 800px; /* set a max-width for the content to prevent it from stretching too much */
@@ -231,14 +225,17 @@ section {
 p {
   margin-bottom: 150px;
 }
+
 .hidden {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-10%);
   transition: all 3s;
 }
+
 .show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+   transition: all 1s;
 }
