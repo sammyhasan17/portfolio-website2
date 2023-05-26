@@ -84,13 +84,13 @@
       font-size: 60px;
       padding-bottom: 200px;
       color: white;
-      font-family: 'Courier New', Courier, monospace;
+     
       
    }
 
    .expertise {
     display: inline-block;
-    padding-top: 250px;
+    padding-top: 200px;
     font-family: 'Courier New', Courier, monospace;
 
   }
