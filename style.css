@@ -23,13 +23,12 @@ z- score is for the order of the layers. The higher the numbers appear on top of
  
  .overlay {
 
-   
    width: 100%;
    height: 100%;
    position: absolute;
    background-repeat: none;
-   height: 100vh;
-   opacity: .8;
+   height: 150vh;
+ 
    background-image: url('rise.png');
    background-size: cover;
    z-index: 0;
@@ -64,7 +63,7 @@ z- score is for the order of the layers. The higher the numbers appear on top of
    position: relative;
     color: rgb(251, 251, 251);
     text-align: center;
-    padding-top: 200px;
+    padding-top: 150px;
 
  }
 
@@ -106,7 +105,7 @@ z- score is for the order of the layers. The higher the numbers appear on top of
    padding-bottom: 20px;
   }
 
-.Projects{
+.Projects {
    padding-bottom: 500px;
 }
 
@@ -142,6 +141,7 @@ z- score is for the order of the layers. The higher the numbers appear on top of
   
    justify-content: center;
    overflow: hidden;
+
  }
 
    .img-wrapper > img,
@@ -149,7 +149,6 @@ z- score is for the order of the layers. The higher the numbers appear on top of
    
    transition: 222ms ease-in-out;
    
-
 }
 
 .img-wrapper > .content.fade {
@@ -159,8 +158,6 @@ z- score is for the order of the layers. The higher the numbers appear on top of
    opacity: 1;
  }
  
-
-
 .contact h3 {
    color: #ffffff;
    text-align: center;
@@ -221,15 +218,16 @@ z- score is for the order of the layers. The higher the numbers appear on top of
 
 */
 section {
-
   overflow-y: scroll; /* add scroll only to the y-axis */
 }
+
 
 .content {
   max-width: 800px; /* set a max-width for the content to prevent it from stretching too much */
   text-align: center; /* center the text horizontally */
   margin: 0 auto; /* center the content container horizontally */
 }
+
 p {
   margin-bottom: 150px;
 }
@@ -237,7 +235,7 @@ p {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-10%);
-  transition: all 1s;
+  transition: all 3s;
 }
 .show {
   opacity: 1;
