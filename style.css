@@ -82,10 +82,12 @@
 
    .subtitle {
       font-size: 60px;
-      padding-bottom: 200px;
       color: white;
-     
-      
+   }
+
+   .construction {
+      font-size: 30px;
+      color: white;
    }
 
    .expertise {
