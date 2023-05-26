@@ -23,8 +23,25 @@ function moveCursor(e) {
 
 }
 
-  
-//todo have my vs code update my gitHub which updates my live website
 
-//hosted on GitHub Pages
-// sammyhasan17.github.io/Portfolio/
+// Create a new IntersectionObserver object, which takes a callback function as its argument
+const observer = new IntersectionObserver((entries) => {
+    // The callback function is called whenever the observed elements intersect with the viewport
+    entries.forEach((entry) => {
+      console.log(entry); // Print information about the intersection to the console
+      // If the observed element is intersecting with the viewport, add the 'show' class to it
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        // Otherwise, remove the 'show' class from it
+        entry.target.classList.remove('show');
+      }
+    });
+  });
+  
+  // Find all elements on the page with the class 'hidden'
+  const hiddenElements = document.querySelectorAll('.hidden');
+  
+  // For each hidden element, observe it with the IntersectionObserver object we created earlier
+  hiddenElements.forEach((el) => observer.observe(el));
+  

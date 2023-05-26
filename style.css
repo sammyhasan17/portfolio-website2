@@ -17,10 +17,12 @@
    background-color: #000000;
    
  }
-
+ /*
+z- score is for the order of the layers. The higher the numbers appear on top of lower ones
+ */
  
  .overlay {
-   
+
    
    width: 100%;
    height: 100%;
@@ -30,13 +32,13 @@
    opacity: .8;
    background-image: url('rise.png');
    background-size: cover;
-   z-index: 1;
+   z-index: 0;
 
    
  }
 
  nav {
-   z-index: 3;
+   z-index: 1;
     position: fixed; 
     width: 100%;
     height: 80px;
@@ -58,7 +60,7 @@
  }
 
  .centered {
-   z-index: 2;
+   z-index: 0;
    position: relative;
     color: rgb(251, 251, 251);
     text-align: center;
@@ -112,11 +114,14 @@
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
    padding-bottom: 500px;
+   
+  
  }
 
 .img-wrapper {
    position: relative;
    overflow: hidden;
+   z-index: 2;
  }
  
  .img-wrapper > img {
@@ -130,19 +135,18 @@
  .img-wrapper > .content {
    position: absolute;
    inset: 0;
+   font-size: 1rem;
    padding: 1rem;
    background: rgba(255, 255, 255, 0.4);
    display: flex;
-   opacity: 0;
-   transition: opacity 0.3s ease-in-out;
+  
    justify-content: center;
    overflow: hidden;
-   
-   
  }
 
-.img-wrapper > img,
-.img-wrapper > .content {
+   .img-wrapper > img,
+   .img-wrapper > .content {
+   
    transition: 222ms ease-in-out;
    
 
@@ -153,8 +157,8 @@
 }
 .img-wrapper:hover > .content.fade {
    opacity: 1;
-}
-
+ }
+ 
 
 
 .contact h3 {
@@ -213,4 +217,30 @@
     border-radius: 50%;
     transition: .02s;
 }
+
+
 */
+section {
+
+  overflow-y: scroll; /* add scroll only to the y-axis */
+}
+
+.content {
+  max-width: 800px; /* set a max-width for the content to prevent it from stretching too much */
+  text-align: center; /* center the text horizontally */
+  margin: 0 auto; /* center the content container horizontally */
+}
+p {
+  margin-bottom: 150px;
+}
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-10%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
