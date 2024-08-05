@@ -1,1 +1,1 @@
-# portfolio-website for Sammy Hasan-Silva
+# (LIVE) portfolio-website for Sam Hasan-Silva
