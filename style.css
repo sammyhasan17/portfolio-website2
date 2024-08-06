@@ -22,7 +22,7 @@
    z-index: 1;
    width: 100%;
    height: 100%;
-   position: absolute;
+   position: fixed;
    background-repeat: none;
    height: 100vh;
    background-image: url('rise.png');
@@ -32,22 +32,24 @@
  nav {
     position: absolute; 
     width: 100%;
-    height: 80px;
+    height: 90px;
     background: none;
-    z-index: 2;
+    z-index: 1;
     
  }
 
+
+/* the ul is the acutal list of logos */
  nav ul {
     position: relative;
     top: 50%;
     width: 100%;
-    transform: translateY(-50%);
+     transform: translateY(-50%);
     padding: 50%;
-    gap: 40px;
+    gap: 30px;
     display: flex;
-    justify-content: space-around;
-    list-style: none;
+    justify-content: center;
+    list-style: none; 
     
  }
 
@@ -69,15 +71,15 @@
  h3 {
    font-family: 'Space grotesk', monospace;
    font-weight: 700;
-   font-size: 70px;
-   padding-bottom: 20px;
+   font-size: 90px;
+   padding-top: 100px;
    
  }
 
  p {
     padding-bottom: 60px;
     font-size: 30px;
-    color: rgb(36, 119, 183);
+    color: rgb(255, 255, 255);
  }
 
    .subtitle {
@@ -94,6 +96,7 @@
     display: inline-block;
     padding-top: 200px;
     font-family: 'Courier New', Courier, monospace;
+    width: 100%;
 
   }
 
@@ -210,8 +213,11 @@
 
 */
 section {
-  overflow-y: scroll; /* add scroll only to the y-axis */
+  overflow-y: hidden; /* add scroll only to the y-axis */
+
 }
+
+
 
 .content {
   max-width: 800px; /* set a max-width for the content to prevent it from stretching too much */
@@ -230,9 +236,9 @@ p {
   transition: all 3s;
 }
 
-.effect {
+/* .effect {
 
-} 
+}  */
 
 
 .show {
