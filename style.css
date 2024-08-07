@@ -7,7 +7,7 @@
 
  a {
     text-decoration: none;
-    color: rgb(36, 119, 183);
+    color: rgb(245, 245, 245);
  }
 
  body {
@@ -72,7 +72,7 @@
    font-family: 'Space grotesk', monospace;
    font-weight: 700;
    font-size: 90px;
-   padding-top: 100px;
+ 
    
  }
 
@@ -156,24 +156,13 @@
    opacity: 1;
  }
  
-.contact h3 {
-   color: #ffffff;
-   text-align: center;
- }
- 
- .contact ul {
-   padding: 0;
-   font-size: 30px;
-   text-align: center;
-   justify-content: center;
-   align-items: center;
-   list-style: none;
-   position: relative;
-   padding-bottom: 20px;
-}
 
-  /* .contact ul {
+ 
+
+
+  .contact ul {
    color: #ffffff;
+   font-size: 30px;
    padding-top: 500px;
    padding-bottom: 0;
    text-align: center;
@@ -181,42 +170,20 @@
    justify-content: center;
    list-style: none;
    position: relative;
- } */
- .contact ul li {
-   margin: 30px 0; /* Adjust the margin value as per your desired spacing */
-}
-
-/*
- .inner-cursor {
-    position: fixed;
-    left: 10px;
-    width: 7px;
-    height: 7px;
-    transform: translate(-50%, -50%) scale(1);
-   
-    background-color: rgba(30, 152, 223, 0.5); 
-    border-radius: 50%;
-    pointer-events: none;
-    transition: transform 0.5s;
+   flex-direction: column; /* Stack items vertically */
  }
-  
-.outer-cursor {
-    position: fixed;
-    left: 10px;
-    width: 25px;
-    height: 25px;
-    transform: translate(-50%, -50%) scale(1);
-    border: 1px solid #1e98df; 
-    border-radius: 50%;
-    transition: .02s;
+ .contact ul li {
+   margin: 30px; /* Adjust the margin value as per your desired spacing */
+   z-index: 1;
+   position: flexbox;
+   flex-direction: column; /* Stack items vertically */
 }
 
-*/
+
 section {
   overflow-y: hidden; /* add scroll only to the y-axis */
 
 }
-
 
 
 .content {
